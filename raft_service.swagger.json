@@ -77,29 +77,6 @@
         },
         "parameters": [
           {
-            "name": "serviceName",
-            "in": "query",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "methodName",
-            "in": "query",
-            "required": false,
-            "type": "string"
-          },
-          {
-            "name": "args",
-            "in": "query",
-            "required": false,
-            "type": "array",
-            "items": {
-              "type": "string",
-              "format": "byte"
-            },
-            "collectionFormat": "multi"
-          },
-          {
             "name": "payload",
             "in": "query",
             "required": false,
@@ -261,13 +238,6 @@
       "properties": {
         "updated": {
           "type": "boolean"
-        },
-        "returnValues": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "format": "byte"
-          }
         },
         "elapsed": {
           "type": "number",
