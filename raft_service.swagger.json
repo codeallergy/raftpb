@@ -242,6 +242,9 @@
         "elapsed": {
           "type": "number",
           "format": "double"
+        },
+        "id": {
+          "type": "string"
         }
       }
     }

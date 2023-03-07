@@ -107,6 +107,7 @@ message RaftConfiguration {
 message Status {
     bool     updated = 1;
     double   elapsed = 2;   // operation cost in seconds
+    string   id = 3;        // optional id field
 }
 
 message Command {
