@@ -34,6 +34,7 @@
           "200": {
             "description": "A successful response.",
             "schema": {
+              "type": "object",
               "properties": {}
             }
           },
@@ -96,6 +97,7 @@
           "200": {
             "description": "A successful response.",
             "schema": {
+              "type": "object",
               "properties": {}
             }
           },
@@ -140,6 +142,7 @@
           "200": {
             "description": "A successful response.",
             "schema": {
+              "type": "object",
               "properties": {}
             }
           },
@@ -184,6 +187,7 @@
         "details": {
           "type": "array",
           "items": {
+            "type": "object",
             "$ref": "#/definitions/protobufAny"
           }
         }
@@ -211,6 +215,7 @@
         "serverList": {
           "type": "array",
           "items": {
+            "type": "object",
             "$ref": "#/definitions/raftRaftServer"
           }
         }
@@ -241,10 +246,12 @@
         },
         "elapsed": {
           "type": "number",
-          "format": "double"
+          "format": "double",
+          "title": "operation cost in seconds"
         },
         "id": {
-          "type": "string"
+          "type": "string",
+          "title": "optional id field"
         }
       }
     }
